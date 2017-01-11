@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+     <title>Formulaire</title>
+    </head>
+    <body>
+      
+<form action="http://www.iut-fbleau.fr/sitebp/post.php" method="post" id="myForm" >
+<label for="date">Date de naissance</label> </br>
+<input type="date" name="date" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" required id="datet"> </br>
+<input type="text" name="age" > 
+  <input type="button" onclick="reset()" value="votre age">
+
+ 
+    <script>
+      function reset(){
+        if( datet.exec(date.pattern) == datet.pattern  )
+     document.ge1tElementById("myForm").reset();
+      }else{
+        
+      }
+    </script>
+             </form>
+    </body>
+</html>

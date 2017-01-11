@@ -7,19 +7,21 @@
    <title></title>
   </head>
    <body>
-    
-     <img src="/assets/img/off.png" onclick="allumer(this)" id="lampe">
+         <img src="/assets/img/off.png"  onclick="allumer()" id="lampe">
+
       <script>
         var etat=0;
+        var swap= setInterval(function(){allumer()}, 1000);
 function allumer() {
-    
     if (etat == 0) {
         etat = 1;
-      lampe.src="/assets/img/on.png";
+      lampe.src="assets/img/on.png";
     }else if(etat==1){
       etat=0;
       lampe.src="assets/img/off.png";
     }
+      
+
 }
 </script>
    </body>
